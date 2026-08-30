@@ -1,0 +1,41 @@
+---
+title: "Research"
+---
+
+# Research
+
+My research focuses on Bayesian time series, state-space models, longitudinal data,
+and causal inference.
+
+## Longitudinal surrogate evaluation
+
+I am developing a state-space framework for evaluating jointly longitudinal
+outcomes and surrogate markers. The project combines causal inference with
+sequential state-space modeling and is accompanied by the **OnlineSurr** R package.
+
+- [Preprint on arXiv](https://arxiv.org/abs/2604.12882)
+- [OnlineSurr on GitHub](https://github.com/silvaneojunior/OnlineSurr)
+
+## Dynamic generalized linear models
+
+My work on k-parametric dynamic generalized linear models develops sequential
+Bayesian methods for state-space time-series models, including simulation-free
+inference based on information-geometric ideas.
+
+- [kDGLM on GitHub](https://github.com/silvaneojunior/kDGLM)
+- [k-DGLM methodology preprint](https://arxiv.org/abs/2201.05387)
+- [kDGLM package preprint](https://arxiv.org/abs/2403.13069)
+
+## Time-series mixture models
+
+I am also working on sequential methods for mixture models in time-series settings.
+
+## Research interests
+
+<div class="chips">
+<span>Bayesian time series</span>
+<span>State-space models</span>
+<span>Hierarchical models</span>
+<span>Nonparametric inference</span>
+<span>Causal inference</span>
+</div>

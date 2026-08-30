@@ -1,0 +1,64 @@
+---
+title: "Publications"
+---
+
+# Publications & preprints
+
+## Peer-reviewed
+
+<div class="publication">
+
+**Alves, M. B., Migon, H. S., Menezes, A., Pinheiro, E., dos Santos Jr., S. (2025).**  
+**Dynamic Econometric Models: A State-Space Formulation.**  
+*Journal of Forecasting*, 44(8), 2494–2508.  
+[DOI](https://doi.org/10.1002/for.70017)
+
+</div>
+
+<div class="publication">
+
+**Freitas, W. V. de, dos Santos Jr., S., Alves, M. B., Nouér, S. A. (2024).**  
+**Impacto da intervenção no uso de antimicrobianos em unidade de terapia intensiva (UTI).**  
+*The Brazilian Journal of Infectious Diseases*, 28(Suppl. 3), 104440.  
+[DOI](https://doi.org/10.1016/j.bjid.2024.104440)
+
+</div>
+
+## Under review & preprints
+
+<div class="publication">
+
+**dos Santos Jr., S., Parast, L. (2026).**  
+**A Causal Framework for Evaluating Jointly Longitudinal Outcomes and Surrogate Markers: A State-Space Approach.**  
+Preprint.  
+[arXiv](https://arxiv.org/abs/2604.12882)
+
+</div>
+
+<div class="publication">
+
+**Alves, M. B., Migon, H. S., dos Santos Jr., S., Marotta, R. (2025).**  
+**k-Parametric Dynamic Generalized Linear Models: A Sequential Approach via Information Geometry.**  
+Under review at *Computational Statistics & Data Analysis*.  
+[arXiv](https://arxiv.org/abs/2201.05387)
+
+</div>
+
+<div class="publication">
+
+**dos Santos Jr., S., Alves, M. B., Migon, H. S. (2024).**  
+**kDGLM: a R package for Bayesian analysis of Generalized Dynamic Linear Models.**  
+Preprint.  
+[arXiv](https://arxiv.org/abs/2403.13069) ·
+[GitHub](https://github.com/silvaneojunior/kDGLM)
+
+</div>
+
+<div class="publication">
+
+**Barreto, D., Borges, R. B. de R., Costa, B., dos Santos Jr., S. (2023).**  
+**New Weighting Strategies for WENO Schemes.**  
+Preprint.  
+[arXiv](https://arxiv.org/abs/2311.09332)
+
+</div>

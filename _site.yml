@@ -1,0 +1,30 @@
+name: "silvaneojunior"
+output_dir: "docs"
+
+navbar:
+  title: "Silvaneo dos Santos Jr."
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Research"
+      href: research.html
+    - text: "Publications"
+      href: publications.html
+    - text: "Software"
+      href: software.html
+    - text: "Talks"
+      href: talks.html
+  right:
+    - text: "CV"
+      href: assets/cv.pdf
+    - icon: fa-github
+      href: https://github.com/silvaneojunior
+
+output:
+  html_document:
+    theme: null
+    css: styles.css
+    include:
+      in_header: header.html
+    self_contained: false
+    lib_dir: site_libs

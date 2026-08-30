@@ -1,0 +1,33 @@
+---
+title: "Software"
+---
+
+# Software
+
+<div class="cards">
+
+<div class="card">
+### kDGLM
+
+**R package**
+
+Bayesian analysis of k-parametric dynamic generalized linear models and related
+state-space time-series models.
+
+[GitHub](https://github.com/silvaneojunior/kDGLM) ·
+[Preprint](https://arxiv.org/abs/2403.13069)
+</div>
+
+<div class="card">
+### OnlineSurr
+
+**R package · CRAN**
+
+Methods for surrogate evaluation with jointly longitudinal outcomes and surrogate
+markers.
+
+[GitHub](https://github.com/silvaneojunior/OnlineSurr) ·
+[CRAN](https://cran.r-project.org/package=OnlineSurr)
+</div>
+
+</div>

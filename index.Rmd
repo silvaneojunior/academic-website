@@ -1,0 +1,113 @@
+---
+title: "Silvaneo Vieira dos Santos Junior"
+---
+
+<div class="hero">
+
+<div class="hero-kicker">Ph.D. Student in Statistics & Data Science</div>
+
+# Silvaneo Vieira dos Santos Junior
+
+<p class="hero-institution">The University of Texas at Austin · Austin, TX</p>
+
+<p class="hero-summary">
+My research focuses on Bayesian time series, state-space models, longitudinal data,
+and causal inference. I work on sequential inference for dynamic generalized linear
+models, simulation-free Bayesian methods, longitudinal surrogate evaluation, and
+time-series mixture models.
+</p>
+
+<div class="hero-links">
+<a class="button primary" href="mailto:silvaneojunior@utexas.edu">Email</a>
+<a class="button" href="https://github.com/silvaneojunior">GitHub</a>
+<a class="button" href="assets/cv.pdf">CV</a>
+</div>
+
+</div>
+
+## Current research
+
+<div class="cards">
+
+<div class="card">
+### Longitudinal surrogate evaluation
+
+A state-space framework for causal evaluation of jointly longitudinal outcomes
+and surrogate markers, with accompanying software in the **OnlineSurr** R package.
+
+[Preprint](https://arxiv.org/abs/2604.12882) ·
+[OnlineSurr](https://github.com/silvaneojunior/OnlineSurr)
+</div>
+
+<div class="card">
+### Sequential Bayesian dynamic models
+
+Sequential inference for dynamic generalized linear models, including
+simulation-free Bayesian analysis and information-geometric methods implemented
+in **kDGLM**.
+
+[kDGLM](https://github.com/silvaneojunior/kDGLM) ·
+[Preprint](https://arxiv.org/abs/2201.05387)
+</div>
+
+<div class="card">
+### Time-series mixture models
+
+Ongoing work on sequential methods for mixture models in time-series settings.
+</div>
+
+</div>
+
+## Research interests
+
+<div class="chips">
+<span>Bayesian time series</span>
+<span>State-space models</span>
+<span>Hierarchical models</span>
+<span>Nonparametric inference</span>
+<span>Causal inference</span>
+</div>
+
+## Education
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-date">Expected 2029</div>
+<div>
+### Ph.D. in Statistics & Data Science
+**The University of Texas at Austin**
+
+In progress.
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">2024</div>
+<div>
+### M.Sc. in Statistics
+**Federal University of Rio de Janeiro (UFRJ)**
+
+Thesis: *Computational Methods for k-parametric Dynamic Generalized Linear Models*  
+Advisor: Mariane B. Alves · GPA: 4.0/4.0
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">2022</div>
+<div>
+### B.Sc. in Statistics
+**Federal University of Rio de Janeiro (UFRJ)**
+
+GPA: 9.0/10.0 · Magna Cum Laude · 2nd in graduating class
+</div>
+</div>
+
+</div>
+
+## Technical skills
+
+**Languages and tools:** R, Python, Stan, TensorFlow, Keras, Git, LaTeX, SQL, Quarto/R Markdown.
+
+**Methods:** State-space modeling, Bayesian inference, forecasting, GLMs/DGLMs,
+Markov chains, hierarchical models, numerical optimization, MCMC/Monte Carlo.
