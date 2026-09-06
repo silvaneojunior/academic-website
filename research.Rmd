@@ -1,41 +1,79 @@
 ---
-title: "Research"
+title: ""
+pagetitle: "Research | Silvaneo V. dos Santos Jr."
 ---
+
+::: {.interior-background-page}
+
+::: {.interior-banner .reveal}
+<div class="banner-copy">observe · learn · repeat</div>
+:::
+
+
+::: {.wide-page}
+::: {.page-intro .reveal}
+<p class="section-kicker">Research</p>
 
 # Research
 
-My research focuses on Bayesian time series, state-space models, longitudinal data,
-and causal inference.
+<p class="page-deck">Bayesian methodology for learning from complex, evolving data.</p>
 
-## Longitudinal surrogate evaluation
+My research is broadly about **Bayesian learning for complex data that arrive or evolve over time**. I am especially interested in methods that preserve sequential updating, causal questions involving longitudinal measurements, and nonparametric models that provide flexibility without giving up principled uncertainty quantification.
+:::
 
-I am developing a state-space framework for evaluating jointly longitudinal
-outcomes and surrogate markers. The project combines causal inference with
-sequential state-space modeling and is accompanied by the **OnlineSurr** R package.
+::: {.research-section #bayesian-sequential-methods}
+<p class="research-number">01</p>
 
-- [Preprint on arXiv](https://arxiv.org/abs/2604.12882)
-- [OnlineSurr on GitHub](https://github.com/silvaneojunior/OnlineSurr)
+::: {.research-section-grid}
+::: {.research-copy}
+## Bayesian sequential methods
 
-## Dynamic generalized linear models
+A recurring goal in my work is to make Bayesian updating genuinely sequential: when new data arrive, inference should be updated from what has already been learned rather than recomputed from the beginning. This is particularly important in time-series and streaming settings, where monitoring, forecasting, and decision-making occur continuously.
 
-My work on k-parametric dynamic generalized linear models develops sequential
-Bayesian methods for state-space time-series models, including simulation-free
-inference based on information-geometric ideas.
+My master's work developed computational methods for **k-parametric dynamic generalized linear models (k-DGLMs)**. These models extend dynamic generalized linear models to response distributions with multiple evolving parameters. The methodology combines conjugate updating with information-geometric approximations so that filtering, smoothing, and forecasting can be carried out efficiently for non-Gaussian dynamic models. I have also worked on extensions for multiple related time series while preserving the sequential structure of the analysis.
 
-- [kDGLM on GitHub](https://github.com/silvaneojunior/kDGLM)
-- [k-DGLM methodology preprint](https://arxiv.org/abs/2201.05387)
-- [kDGLM package preprint](https://arxiv.org/abs/2403.13069)
+This work is implemented in the [`kDGLM`](https://github.com/silvaneojunior/kDGLM) R package.
 
-## Time-series mixture models
+**Related work:** [k-parametric DGLMs](https://arxiv.org/abs/2201.05387) · [kDGLM package paper](https://arxiv.org/abs/2403.13069)
+:::
 
-I am also working on sequential methods for mixture models in time-series settings.
+:::
+:::
 
-## Research interests
+::: {.research-section #causal-inference-and-surrogate-evaluation}
+<p class="research-number">02</p>
 
-<div class="chips">
-<span>Bayesian time series</span>
-<span>State-space models</span>
-<span>Hierarchical models</span>
-<span>Nonparametric inference</span>
-<span>Causal inference</span>
-</div>
+::: {.research-section-grid}
+::: {.research-copy}
+## Causal inference & surrogate evaluation
+
+A second line of my research concerns **surrogate markers**: intermediate measurements that may capture part of a treatment's effect on a primary outcome. The central causal question is not simply whether a surrogate predicts the outcome, but how much of the treatment effect on the outcome is explained through the surrogate.
+
+I developed a framework for settings in which **both the surrogate and the primary outcome are longitudinal**. The method defines treatment-effect and proportion-of-treatment-effect-explained quantities over time, allowing surrogate strength to be studied locally and cumulatively along the trajectory. State-space models provide an efficient estimation strategy that can accommodate temporal evolution and subject-level variability, while bootstrap inference and a temporal-homogeneity test address uncertainty and changes in surrogate strength over time.
+
+The methodology is implemented in the [`OnlineSurr`](https://github.com/silvaneojunior/OnlineSurr) R package.
+
+**Related work:** [A Causal Framework for Evaluating Jointly Longitudinal Outcomes and Surrogate Markers](https://arxiv.org/abs/2604.12882)
+:::
+
+:::
+:::
+
+::: {.research-section #bayesian-nonparametrics}
+<p class="research-number">03</p>
+
+::: {.research-section-grid}
+::: {.research-copy}
+## Bayesian nonparametrics
+
+My current work uses **Bayesian nonparametric mixture models** to make surrogate evaluation more flexible and more naturally compatible with streaming data. The motivation is to reduce sensitivity to a prespecified working mean model while retaining a full probabilistic description of uncertainty.
+
+I am studying Dirichlet-process mixture formulations in which the joint behavior of the outcome, surrogate, treatment, and covariates can adapt to heterogeneous or multimodal data. A major computational question is how to carry the posterior forward as new batches arrive without retaining all previously observed subject-level data. This creates an intersection between Bayesian nonparametrics and sequential computation: the model should remain expressive, but its posterior must also admit a practical finite representation for online updating.
+
+Current directions include sequential posterior approximations for mixture models, extensions to longitudinal settings, and using flexible posterior models to study robustness and heterogeneity in causal surrogate evaluation.
+:::
+
+:::
+:::
+:::
+:::

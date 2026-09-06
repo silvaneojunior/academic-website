@@ -1,54 +1,63 @@
 ---
-title: "Talks"
+title: ""
+pagetitle: "Talks | Silvaneo V. dos Santos Jr."
 ---
 
-# Talks & presentations
+::: {.interior-background-page}
 
-<div class="timeline">
+::: {.interior-banner .banner-talks .reveal}
+<div class="banner-copy">observe · learn · repeat</div>
+:::
 
-<div class="timeline-item">
-<div class="timeline-date">Sep 13–18, 2026</div>
-<div>
+::: {.wide-page}
+::: {.page-intro .reveal}
+<p class="section-kicker">Presentations</p>
+
+# Talks
+
+<p class="page-deck">Selected conference and research presentations.</p>
+:::
+
+::: {.talk-list}
+::: {.talk-item}
+<span class="talk-date">September 2026</span>
+
 ### A causal framework for evaluating jointly longitudinal outcomes and surrogate markers: A State-Space Approach
-**26º National Symposium of Probability and Statistics (SINAPE 2026)**  
-Gramado, RS, Brazil · Oral session
-</div>
-</div>
 
-<div class="timeline-item">
-<div class="timeline-date">Jun 1–4, 2026</div>
-<div>
+26º National Symposium of Probability and Statistics (SINAPE 2026) · Gramado, Brazil · Oral session
+:::
+
+::: {.talk-item}
+<span class="talk-date">June 2026</span>
+
 ### A causal framework for evaluating jointly longitudinal outcomes and surrogate markers: A State-Space Approach
-**9th International Workshop in Sequential Methodologies (IWSM 2026)**  
-American University, Washington, DC · Invited session
-</div>
-</div>
 
-<div class="timeline-item">
-<div class="timeline-date">May 29 – Jun 2, 2023</div>
-<div>
+9th International Workshop in Sequential Methodologies (IWSM 2026) · American University, Washington, DC · Invited session
+:::
+
+::: {.talk-item}
+<span class="talk-date">2023</span>
+
 ### Modeling of Varicella Hospitalization Counts Via Dynamic Poisson Regressions
-**XLIV Giulio Massarani Journey of Scientific Initiation, UFRJ**  
-Honorable Mention
-</div>
-</div>
 
-<div class="timeline-item">
-<div class="timeline-date">Mar 14–18, 2022</div>
-<div>
+XLIV Giulio Massarani Journey of Scientific Initiation · UFRJ · Honorable Mention
+:::
+
+::: {.talk-item}
+<span class="talk-date">2022</span>
+
 ### Neural Networks and the Numeric Resolution of Differential Equations
-**XLIII Giulio Massarani Journey of Scientific Initiation, UFRJ**  
-Honorable Mention
-</div>
-</div>
 
-<div class="timeline-item">
-<div class="timeline-date">Mar 22–26, 2021</div>
-<div>
+XLIII Giulio Massarani Journey of Scientific Initiation · UFRJ · Honorable Mention
+:::
+
+::: {.talk-item}
+<span class="talk-date">2021</span>
+
 ### Anomaly Detection in Biometric Tables through Long Short-Term Memory Network
-**XLII Giulio Massarani Journey of Scientific Initiation, UFRJ**  
-Honorable Mention
-</div>
-</div>
 
-</div>
+XLII Giulio Massarani Journey of Scientific Initiation · UFRJ · Honorable Mention
+:::
+:::
+:::
+:::

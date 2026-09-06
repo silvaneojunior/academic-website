@@ -1,0 +1,332 @@
+/* Homepage atmosphere layer.
+   Loaded after styles.css so the site's existing layout remains intact. */
+
+.home-background-page {
+  position: relative;
+  isolation: isolate;
+  min-height: calc(100vh - 76px);
+  padding: 0 0 clamp(170px, 20vh, 250px);
+}
+
+/* Full-page coastal layer. The photograph stays at the bottom while a long
+   cream veil fades it into the reading area. */
+.home-background-page::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: -58px;
+  bottom: -96px;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background-image:
+    radial-gradient(circle at 8% 24%, rgba(180, 85, 53, .045), transparent 28%),
+    radial-gradient(circle at 91% 23%, rgba(49, 95, 104, .055), transparent 27%),
+    linear-gradient(
+      180deg,
+      rgba(248, 243, 233, 1) 0%,
+      rgba(248, 243, 233, .998) 38%,
+      rgba(248, 243, 233, .97) 50%,
+      rgba(248, 243, 233, .84) 59%,
+      rgba(248, 243, 233, .55) 68%,
+      rgba(248, 243, 233, .22) 76%,
+      rgba(248, 243, 233, .04) 84%,
+      rgba(248, 243, 233, 0) 90%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(248, 243, 233, .18),
+      transparent 17%,
+      transparent 83%,
+      rgba(248, 243, 233, .14)
+    ),
+    url("assets/ocean-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center, center, center, center, center bottom;
+  background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% auto;
+  pointer-events: none;
+}
+
+/* Botanical line work and birds are kept near the page edges, away from the
+   main copy. */
+.home-background-page::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -58px;
+  bottom: -96px;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background: url("assets/home-decor.svg") center top / 100% auto no-repeat;
+  pointer-events: none;
+}
+
+.home-background-page > .wide-page {
+  position: relative;
+  z-index: 1;
+}
+
+/* Preserve the current hero geometry, adding only enough vertical room for
+   the coastline to become visible beneath it. */
+.home-background-page .home-hero {
+  min-height: 650px;
+  padding-top: 36px;
+  padding-bottom: 30px;
+}
+
+/* Soft local illumination guarantees contrast without turning the copy into
+   a boxed card. */
+.home-background-page .hero-copy {
+  position: relative;
+}
+
+.home-background-page .hero-copy::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -38px -58px -42px -48px;
+  border-radius: 44px;
+  background: radial-gradient(
+    ellipse at 38% 48%,
+    rgba(255, 253, 248, .90) 0%,
+    rgba(255, 253, 248, .68) 48%,
+    rgba(255, 253, 248, .18) 70%,
+    rgba(255, 253, 248, 0) 82%
+  );
+  pointer-events: none;
+}
+
+/* A restrained halo keeps the portrait distinct from the background
+   transition without looking boxed-in. */
+.home-background-page .hero-portrait::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -26px -12px -28px -26px;
+  border-radius: 46px;
+  background: radial-gradient(
+    ellipse,
+    rgba(248, 243, 233, .62) 0%,
+    rgba(248, 243, 233, .20) 58%,
+    rgba(248, 243, 233, 0) 76%
+  );
+  pointer-events: none;
+}
+
+@media (max-width: 1180px) {
+  .home-background-page::after {
+    opacity: .72;
+  }
+}
+
+@media (max-width: 860px) {
+  .home-background-page {
+    padding-bottom: 145px;
+  }
+
+  .home-background-page::before {
+    top: -38px;
+    bottom: -70px;
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, auto 54%;
+    background-position: center, center, center, center, 56% bottom;
+  }
+
+  .home-background-page::after {
+    top: -38px;
+    bottom: -70px;
+    background-size: auto 100%;
+    opacity: .42;
+  }
+
+  .home-background-page .home-hero {
+    min-height: 0;
+    padding-top: 24px;
+    padding-bottom: 36px;
+  }
+
+  .home-background-page .hero-copy::before {
+    inset: -22px -20px -28px -20px;
+    border-radius: 26px;
+    background: rgba(248, 243, 233, .78);
+  }
+}
+
+@media (max-width: 560px) {
+  .home-background-page {
+    padding-bottom: 105px;
+  }
+
+  .home-background-page::before {
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, auto 44%;
+    background-position: center, center, center, center, 54% bottom;
+  }
+
+  .home-background-page::after {
+    opacity: .28;
+  }
+}
+
+
+/* ------------------------------------------------------------------
+   Interior-page atmosphere
+   Keeps the current banner but adds edge decoration and a slightly
+   richer cream field behind the text-heavy pages.
+   ------------------------------------------------------------------ */
+
+.interior-background-page {
+  position: relative;
+  isolation: isolate;
+  padding-bottom: 28px;
+}
+
+.interior-background-page::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: -58px;
+  bottom: -90px;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background-image:
+    radial-gradient(circle at 9% 15%, rgba(180, 85, 53, .040), transparent 22%),
+    radial-gradient(circle at 88% 17%, rgba(49, 95, 104, .050), transparent 23%),
+    radial-gradient(circle at 6% 63%, rgba(49, 95, 104, .030), transparent 20%),
+    radial-gradient(circle at 92% 72%, rgba(180, 85, 53, .028), transparent 20%),
+    linear-gradient(
+      90deg,
+      rgba(248, 243, 233, .14),
+      rgba(248, 243, 233, 0) 14%,
+      rgba(248, 243, 233, 0) 86%,
+      rgba(248, 243, 233, .12)
+    );
+  pointer-events: none;
+}
+
+.interior-background-page::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -58px;
+  bottom: -90px;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background: url("assets/interior-decor.svg") center top / 100% 100% no-repeat;
+  pointer-events: none;
+}
+
+.interior-background-page > .wide-page,
+.interior-background-page > .editorial-grid {
+  position: relative;
+  z-index: 1;
+}
+
+/* Keep the other beach image on the interior banners. */
+.interior-background-page .interior-banner,
+.interior-background-page .software-landscape {
+  background-image:
+    linear-gradient(90deg, rgba(23,50,77,.46), rgba(23,50,77,.08) 55%, rgba(180,85,53,.12)),
+    url("assets/ocean-banner-alt.jpg");
+  background-position: center 52%;
+}
+
+/* Gentle local light washes for long reading sections. */
+.interior-background-page .page-intro,
+.interior-background-page .editorial-grid,
+.interior-background-page .publication-list,
+.interior-background-page .talk-list,
+.interior-background-page .package-card,
+.interior-background-page .thesis-card {
+  position: relative;
+}
+
+.interior-background-page .page-intro::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -26px -34px -20px -28px;
+  border-radius: 34px;
+  background: radial-gradient(
+    ellipse at 30% 42%,
+    rgba(255, 253, 248, .76) 0%,
+    rgba(255, 253, 248, .42) 45%,
+    rgba(255, 253, 248, .06) 70%,
+    rgba(255, 253, 248, 0) 84%
+  );
+  pointer-events: none;
+}
+
+.interior-background-page .page-main::before,
+.interior-background-page .wide-page::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 110px;
+  left: min(-18px, -1.5vw);
+  right: min(-18px, -1.5vw);
+  bottom: 0;
+  border-radius: 34px;
+  background: linear-gradient(180deg, rgba(255,253,248,.18), rgba(255,253,248,.07));
+  pointer-events: none;
+}
+
+/* Research page has a side rail; keep the wash confined to the main column. */
+.interior-background-page .editorial-grid .wide-page::before {
+  display: none;
+}
+
+.interior-background-page .editorial-grid .page-main::before {
+  top: 84px;
+  left: -26px;
+  right: -26px;
+  bottom: 8px;
+}
+
+.interior-background-page .page-rail::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -8px -18px -8px -18px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255,253,248,.44), rgba(255,253,248,.12));
+  pointer-events: none;
+}
+
+.interior-background-page .publication-item:hover,
+.interior-background-page .talk-item:hover,
+.interior-background-page .package-card:hover {
+  background: rgba(255,255,255,.42);
+}
+
+@media (max-width: 1180px) {
+  .interior-background-page::after {
+    opacity: .75;
+  }
+}
+
+@media (max-width: 860px) {
+  .interior-background-page::before,
+  .interior-background-page::after {
+    top: -38px;
+    bottom: -60px;
+  }
+
+  .interior-background-page::after {
+    background-size: auto 100%;
+    opacity: .36;
+  }
+
+  .interior-background-page .page-intro::before {
+    inset: -18px -16px -14px -16px;
+    border-radius: 24px;
+    background: rgba(255,253,248,.68);
+  }
+
+  .interior-background-page .page-main::before,
+  .interior-background-page .wide-page::before,
+  .interior-background-page .page-rail::before {
+    display: none;
+  }
+}

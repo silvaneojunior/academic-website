@@ -1,4 +1,4 @@
-name: Deploy R Markdown site to GitHub Pages
+name: Render and deploy R Markdown website
 
 on:
   push:
@@ -34,23 +34,24 @@ jobs:
           packages: |
             any::rmarkdown
 
+      - name: Download OnlineSurr logo
+        run: |
+          mkdir -p assets
+          curl --fail --location --retry 3             https://silvaneojunior.github.io/OnlineSurr/reference/figures/hex_badge.png             --output assets/onlinesurr-hex.png
+
       - name: Render website
         shell: Rscript {0}
         run: |
           rmarkdown::render_site()
 
-      - name: Copy CV into rendered site
+      - name: Preserve custom domain
         run: |
-          mkdir -p docs/assets
-          cp assets/cv.pdf docs/assets/cv.pdf
-
-      - name: Add nojekyll marker
-        run: touch docs/.nojekyll
+          printf 'silvaneojunior.com\n' > docs/CNAME
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload Pages artifact
+      - name: Upload rendered website
         uses: actions/upload-pages-artifact@v4
         with:
           path: docs

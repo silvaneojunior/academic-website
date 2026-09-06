@@ -1,64 +1,97 @@
 ---
-title: "Publications"
+title: ""
+pagetitle: "Publications | Silvaneo dos Santos Jr."
 ---
+
+::: {.interior-background-page}
+
+::: {.interior-banner .banner-publications .reveal}
+<div class="banner-copy">observe · learn · repeat</div>
+:::
+
+::: {.wide-page}
+::: {.page-intro .reveal}
 
 # Publications & preprints
 
+:::
+
 ## Peer-reviewed
 
-<div class="publication">
+::: {.publication-list .publication-page}
+::: {.publication-item}
+<span class="pub-year">2025</span>
 
-**Alves, M. B., Migon, H. S., Menezes, A., Pinheiro, E., dos Santos Jr., S. (2025).**  
-**Dynamic Econometric Models: A State-Space Formulation.**  
+### Dynamic Econometric Models: A State-Space Formulation
+
+Alves, M. B., Migon, H. S., Menezes, A., Pinheiro, E., **dos Santos Jr., S.**  
 *Journal of Forecasting*, 44(8), 2494–2508.  
 [DOI](https://doi.org/10.1002/for.70017)
+:::
 
-</div>
+::: {.publication-item}
+<span class="pub-year">2024</span>
 
-<div class="publication">
+### Impacto da intervenção no uso de antimicrobianos em unidade de terapia intensiva (UTI)
 
-**Freitas, W. V. de, dos Santos Jr., S., Alves, M. B., Nouér, S. A. (2024).**  
-**Impacto da intervenção no uso de antimicrobianos em unidade de terapia intensiva (UTI).**  
+Freitas, W. V. de, **dos Santos Jr., S.**, Alves, M. B., Nouér, S. A.  
 *The Brazilian Journal of Infectious Diseases*, 28(Suppl. 3), 104440.  
 [DOI](https://doi.org/10.1016/j.bjid.2024.104440)
+:::
+:::
 
-</div>
+## Manuscripts & preprints
 
-## Under review & preprints
+::: {.publication-list .publication-page}
+::: {.publication-item}
+<span class="pub-year">2026</span>
 
-<div class="publication">
+### A Causal Framework for Evaluating Jointly Longitudinal Outcomes and Surrogate Markers: A State-Space Approach
 
-**dos Santos Jr., S., Parast, L. (2026).**  
-**A Causal Framework for Evaluating Jointly Longitudinal Outcomes and Surrogate Markers: A State-Space Approach.**  
+**dos Santos Jr., S. V.** and Parast, L.  
 Preprint.  
-[arXiv](https://arxiv.org/abs/2604.12882)
+[arXiv](https://arxiv.org/abs/2604.12882) · [Software](https://github.com/silvaneojunior/OnlineSurr)
+:::
 
-</div>
+::: {.publication-item}
+<span class="pub-year">2025</span>
 
-<div class="publication">
+### k-Parametric Dynamic Generalized Linear Models: A Sequential Approach via Information Geometry
 
-**Alves, M. B., Migon, H. S., dos Santos Jr., S., Marotta, R. (2025).**  
-**k-Parametric Dynamic Generalized Linear Models: A Sequential Approach via Information Geometry.**  
-Under review at *Computational Statistics & Data Analysis*.  
+Alves, M. B., Migon, H. S., **dos Santos Jr., S.**, Marotta, R.  
+Under review.  
 [arXiv](https://arxiv.org/abs/2201.05387)
+:::
 
-</div>
+::: {.publication-item}
+<span class="pub-year">2024</span>
 
-<div class="publication">
+### kDGLM: a R package for Bayesian analysis of Generalized Dynamic Linear Models
 
-**dos Santos Jr., S., Alves, M. B., Migon, H. S. (2024).**  
-**kDGLM: a R package for Bayesian analysis of Generalized Dynamic Linear Models.**  
+**dos Santos Jr., S.**, Alves, M. B., Migon, H. S.  
 Preprint.  
-[arXiv](https://arxiv.org/abs/2403.13069) ·
-[GitHub](https://github.com/silvaneojunior/kDGLM)
+[arXiv](https://arxiv.org/abs/2403.13069) · [Software](https://github.com/silvaneojunior/kDGLM)
+:::
 
-</div>
+::: {.publication-item}
+<span class="pub-year">2023</span>
 
-<div class="publication">
+### New Weighting Strategies for WENO Schemes
 
-**Barreto, D., Borges, R. B. de R., Costa, B., dos Santos Jr., S. (2023).**  
-**New Weighting Strategies for WENO Schemes.**  
+Barreto, D., Borges, R. B. de R., Costa, B., **dos Santos Jr., S.**  
 Preprint.  
 [arXiv](https://arxiv.org/abs/2311.09332)
+:::
+:::
 
-</div>
+## Thesis
+
+::: {.thesis-card}
+<span class="pub-year">M.Sc.</span>
+
+### Computational Methods for k-Parametric Dynamic Generalized Linear Models
+
+Federal University of Rio de Janeiro (UFRJ). The dissertation develops computational methods for Bayesian dynamic models, from efficient sequential updating for k-DGLMs to extensions for multiple time series and the accompanying `kDGLM` software.
+:::
+:::
+:::

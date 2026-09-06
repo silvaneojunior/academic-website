@@ -1,33 +1,60 @@
 ---
-title: "Software"
+title: ""
+pagetitle: "Software | Silvaneo V. dos Santos Jr."
 ---
+
+
+::: {.interior-background-page}
+
+::: {.interior-banner .reveal}
+<div class="banner-copy">observe · learn · repeat</div>
+:::
+
+::: {.wide-page}
+::: {.page-intro .reveal}
 
 # Software
 
-<div class="cards">
 
-<div class="card">
-### kDGLM
+:::
 
-**R package**
+::: {.package-card}
+::: {.package-brand}
+<img class="package-logo" src="assets/kDGLM-hex.png" alt="kDGLM visual mark">
+:::
 
-Bayesian analysis of k-parametric dynamic generalized linear models and related
-state-space time-series models.
+::: {.package-content}
+<p class="package-kicker">Bayesian dynamic models</p>
 
-[GitHub](https://github.com/silvaneojunior/kDGLM) ·
-[Preprint](https://arxiv.org/abs/2403.13069)
-</div>
+## kDGLM
 
-<div class="card">
-### OnlineSurr
+`kDGLM` provides tools for **sequential Bayesian analysis of dynamic generalized linear models**. It supports filtering and smoothing, forecasting, monitoring, simulation, and feed-forward interventions, with model-building components for trends, seasonality, regressions, autoregressive terms, transfer functions, and discount-based evolution.
 
-**R package · CRAN**
+The current package supports several univariate and multivariate response families, including Normal, bivariate Normal, Poisson, Gamma, and Multinomial models, and it can jointly model multiple time series. Its recursive structure is designed so that inference can be updated as the series grows rather than rebuilding the analysis from the beginning.
 
-Methods for surrogate evaluation with jointly longitudinal outcomes and surrogate
-markers.
+[GitHub repository](https://github.com/silvaneojunior/kDGLM){.button .button-primary}
+[Documentation](https://silvaneojunior.github.io/kDGLM/){.button}
+[Methodology](https://arxiv.org/abs/2201.05387){.button}
+:::
+:::
 
-[GitHub](https://github.com/silvaneojunior/OnlineSurr) ·
-[CRAN](https://cran.r-project.org/package=OnlineSurr)
-</div>
+::: {.package-card}
+::: {.package-brand}
+<img class="package-logo" src="assets/onlinesurr-hex.png" alt="OnlineSurr package hex logo">
+:::
 
-</div>
+::: {.package-content}
+<p class="package-kicker">Longitudinal surrogate evaluation</p>
+
+## OnlineSurr
+
+`OnlineSurr` implements methods for **surrogate evaluation when both the primary outcome and the surrogate are measured longitudinally**. It fits marginal and surrogate-adjusted Gaussian state-space models and uses them to estimate treatment effects over time and the proportion of treatment effect explained by the surrogate.
+
+The package provides local and cumulative PTE summaries, bootstrap-based uncertainty quantification, plotting and summary methods, and a test for whether surrogate strength is homogeneous over time. It accompanies the methodological work on jointly longitudinal outcomes and surrogate markers.
+
+[GitHub repository](https://github.com/silvaneojunior/OnlineSurr){.button .button-primary}
+[Documentation](https://silvaneojunior.github.io/OnlineSurr/){.button}
+[Paper](https://arxiv.org/abs/2604.12882){.button}
+:::
+:::
+:::

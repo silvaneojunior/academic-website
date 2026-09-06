@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="leafGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17324d" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#315f68" stop-opacity=".08"/>
+    </linearGradient>
+    <linearGradient id="leafRust" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b45535" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#8d3d27" stop-opacity=".08"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation=".35"/>
+    </filter>
+  </defs>
+
+  <!-- upper-left branch -->
+  <g fill="none" stroke="#315f68" stroke-opacity=".14" stroke-width="2.1" stroke-linecap="round">
+    <path d="M0 112 C86 100 145 58 225 -10"/>
+    <path d="M59 91 C80 63 87 31 88 -4"/>
+    <path d="M108 65 C133 38 158 16 184 -8"/>
+  </g>
+  <g fill="url(#leafGreen)" filter="url(#soft)">
+    <ellipse cx="38" cy="94" rx="15" ry="38" transform="rotate(-64 38 94)"/>
+    <ellipse cx="72" cy="73" rx="14" ry="35" transform="rotate(-42 72 73)"/>
+    <ellipse cx="103" cy="49" rx="13" ry="32" transform="rotate(-26 103 49)"/>
+    <ellipse cx="138" cy="32" rx="12" ry="30" transform="rotate(-46 138 32)"/>
+    <ellipse cx="171" cy="14" rx="11" ry="28" transform="rotate(-57 171 14)"/>
+  </g>
+  <g fill="none" stroke="#17324d" stroke-opacity=".08" stroke-width="1">
+    <path d="M38 69 L38 119"/><path d="M72 44 L72 103"/><path d="M103 22 L103 76"/>
+  </g>
+
+  <!-- faint left-side branch, mostly outside the reading column -->
+  <g opacity=".55">
+    <path d="M0 520 C48 480 71 441 91 386" fill="none" stroke="#315f68" stroke-opacity=".13" stroke-width="2"/>
+    <g fill="#315f68" fill-opacity=".08">
+      <ellipse cx="23" cy="493" rx="13" ry="31" transform="rotate(-54 23 493)"/>
+      <ellipse cx="50" cy="462" rx="12" ry="29" transform="rotate(-34 50 462)"/>
+      <ellipse cx="72" cy="427" rx="11" ry="26" transform="rotate(-19 72 427)"/>
+    </g>
+  </g>
+
+  <!-- upper-right branch -->
+  <g fill="none" stroke="#315f68" stroke-opacity=".14" stroke-width="2.1" stroke-linecap="round">
+    <path d="M1920 30 C1835 43 1787 87 1730 158"/>
+    <path d="M1881 41 C1851 73 1829 111 1817 153"/>
+    <path d="M1839 66 C1811 96 1789 122 1765 155"/>
+  </g>
+  <g fill="url(#leafGreen)">
+    <ellipse cx="1887" cy="48" rx="14" ry="36" transform="rotate(52 1887 48)"/>
+    <ellipse cx="1854" cy="70" rx="14" ry="34" transform="rotate(40 1854 70)"/>
+    <ellipse cx="1823" cy="95" rx="13" ry="31" transform="rotate(31 1823 95)"/>
+    <ellipse cx="1791" cy="121" rx="12" ry="29" transform="rotate(43 1791 121)"/>
+    <ellipse cx="1759" cy="146" rx="11" ry="27" transform="rotate(55 1759 146)"/>
+  </g>
+  <g fill="url(#leafRust)">
+    <ellipse cx="1863" cy="108" rx="10" ry="27" transform="rotate(27 1863 108)"/>
+    <ellipse cx="1835" cy="128" rx="9" ry="24" transform="rotate(39 1835 128)"/>
+  </g>
+
+  <!-- right-lower pale branch -->
+  <g opacity=".55">
+    <path d="M1920 662 C1855 636 1805 595 1762 536" fill="none" stroke="#315f68" stroke-opacity=".13" stroke-width="2"/>
+    <g fill="#315f68" fill-opacity=".08">
+      <ellipse cx="1895" cy="648" rx="13" ry="32" transform="rotate(58 1895 648)"/>
+      <ellipse cx="1863" cy="625" rx="12" ry="30" transform="rotate(50 1863 625)"/>
+      <ellipse cx="1831" cy="599" rx="12" ry="28" transform="rotate(40 1831 599)"/>
+      <ellipse cx="1800" cy="568" rx="10" ry="25" transform="rotate(30 1800 568)"/>
+    </g>
+  </g>
+
+  <!-- understated birds in the far-right whitespace -->
+  <g fill="none" stroke="#17324d" stroke-opacity=".31" stroke-width="4" stroke-linecap="round">
+    <path d="M1650 307 Q1665 294 1680 308 Q1695 294 1711 307"/>
+    <path d="M1710 356 Q1721 346 1733 356 Q1745 345 1758 354"/>
+    <path d="M1600 388 Q1609 380 1619 388 Q1629 379 1640 386"/>
+  </g>
+
+  <!-- small terracotta leaf accent -->
+  <g transform="translate(1874 437) rotate(18)" fill="#b45535" fill-opacity=".21">
+    <path d="M0 0 C20 -21 31 -43 38 -72" fill="none" stroke="#b45535" stroke-opacity=".22" stroke-width="2"/>
+    <ellipse cx="14" cy="-20" rx="8" ry="19" transform="rotate(-43 14 -20)"/>
+    <ellipse cx="25" cy="-39" rx="7" ry="17" transform="rotate(-29 25 -39)"/>
+    <ellipse cx="34" cy="-57" rx="6" ry="15" transform="rotate(-18 34 -57)"/>
+  </g>
+</svg>
