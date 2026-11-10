@@ -11,7 +11,6 @@ pagetitle: "Talks | Silvaneo V. dos Santos Jr."
 
 ::: {.wide-page}
 ::: {.page-intro .reveal}
-<p class="section-kicker">Presentations</p>
 
 # Talks
 
@@ -19,6 +18,14 @@ pagetitle: "Talks | Silvaneo V. dos Santos Jr."
 :::
 
 ::: {.talk-list}
+::: {.talk-item}
+<span class="talk-date">March 2027</span>
+
+### A Bayesian Nonparametric Framework for Surrogate Endpoint Evaluation.
+
+VIII Latin American Congress of Bayesian Statistics and XVIII Brazilian Meeting of Bayesian Statistics (COBAL-EBEB 2027) · Búzios, Brazil · Oral session
+:::
+
 ::: {.talk-item}
 <span class="talk-date">September 2026</span>
 

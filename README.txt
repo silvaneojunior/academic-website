@@ -4,13 +4,13 @@ Purpose
 -------
 Keep the interior-page banners, but replace the otherwise blank cream background
 with subtle botanical/bird decoration near the outer margins, similar to the
-homepage. The new interior banners use the other beach image (ocean-banner-alt.jpg).
+homepage. The new interior banners use the other beach image (ocean-banner-alt.png).
 
 Files to add
 ------------
 background.css                (replace your current background.css with this updated one)
 assets/interior-decor.svg
-assets/ocean-banner-alt.jpg
+assets/ocean-banner-alt.png
 
 Files to replace
 ----------------

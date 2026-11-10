@@ -12,7 +12,6 @@ pagetitle: "Research | Silvaneo V. dos Santos Jr."
 
 ::: {.wide-page}
 ::: {.page-intro .reveal}
-<p class="section-kicker">Research</p>
 
 # Research
 
